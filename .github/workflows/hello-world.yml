@@ -3,6 +3,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps: # список шагов, которые надо выполнить
+    steps: 
+      - name: my-step
       - uses: actions/checkout@v3
       - run: ls -la
